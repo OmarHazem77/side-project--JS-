@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#menu{
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    transition: right 0.5s ease-in-out;
+}
+a{
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+
+}
+#menu.active{
+    right: 0;
+}
+    </style>
+</head>
+<body>
+<button onclick="togglemenu()">menu</button>
+<div id="menu">
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">contact</a>
+    <a href="">bortfolio</a>
+
+</div>
+<script>
+    function togglemenu(){
+        document.getElementById('menu').classList.toggle('active')
+    }
+</script>
+</body>
+</html>

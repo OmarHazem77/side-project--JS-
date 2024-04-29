@@ -1,0 +1,53 @@
+.chaticon {
+    position: fixed;
+    padding: 10px;
+    border-radius: 15px;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0 0 2px gray;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: white;
+    border: 3px solid #333;
+    box-shadow: 0 0 5px gray;
+    border-radius: 15px;
+    width:400px;
+    height: 40vh;
+    transform: scale(0);  /* مهم بتخلى الشات بوك يختفى  */
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    background-color: #02162B;
+    color: white;
+}
+
+.active {
+    transform: scale(1);
+
+}
+
+.header {
+    background-color: #00283A;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+
+
+}
+
+.chatbody{
+    height: 24.5vh;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+input {
+    width: 94%;
+    padding: 10px;
+    border-radius: 15px;
+}

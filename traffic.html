@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #traffic {
+            background-color: black;
+            margin: 50px auto;
+            width: 100px;
+            height: 300px;
+            border-radius: 15px;
+            padding-top: 1px;
+
+        }
+
+        #traffic>div {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 5px auto;
+            opacity: 0.5;
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        #green {
+            background-color: yellowgreen;
+        }
+
+        #traffic>div.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="traffic">
+        <div id="red" onclick="clickred()" ></div>
+        <div id="yellow" onclick="clickyellow()" ></div>
+        <div id="green" onclick="clickgreen()" ></div>
+
+    </div>
+    <script>
+
+        let red = document.getElementById('red')
+        let yellow = document.getElementById('yellow')
+        let green = document.getElementById('green')
+        function clickred() {
+            red.classList.add('active')
+            yellow.classList.remove('active')
+            green.classList.remove('active')
+
+        }
+        function clickyellow() {
+            red.classList.remove('active')
+            yellow.classList.add('active')
+            green.classList.remove('active')
+
+        } function clickgreen() {
+            red.classList.remove('active')
+            yellow.classList.remove('active')
+            green.classList.add('active')
+
+        }
+
+    </script>
+</body>
+
+</html>

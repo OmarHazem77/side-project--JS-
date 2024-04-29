@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            color: aliceblue;
+            padding: 10px;
+            background-color: blue;
+            border-radius: 5px;
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellendus sapiente doloribus sint error,
+        mollitia officia id corrupti adipisci earum facere vero amet dicta natus, ipsam reprehenderit odit dolor et.</p>
+        <button onclick="changecolor()" id="button">hideme</button>
+
+        <script>
+           function changecolor(){
+            document.getElementById('main').style.display = 'none'
+            document.getElementById('button').classList.add('active')
+            document.getElementById('main').style.backgroundColor='gray'
+           }
+        </script>
+</body>
+
+</html>
